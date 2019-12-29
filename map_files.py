@@ -10,7 +10,7 @@ piano_keys=["A2","A2#","B2",
 ]
 
 import os
-dirpath = "/Users/BruceYoung/Documents/program/python/mypiano/audios/"
+dirpath = os.path.abspath('audios/')
 files = os.listdir(dirpath)
 files.sort()
 index=0
