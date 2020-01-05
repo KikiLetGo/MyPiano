@@ -10,6 +10,13 @@ import sys
 import os
 pygame.init()
 p = pyaudio.PyAudio()
+
+screen = pygame.display.set_mode((500, 304))
+pygame.display.set_caption('My-Piano') # 设置窗口标题
+background=pygame.image.load(r".\music.png") #设置窗口背景
+screen.blit(background,(0,0))  #对齐的坐标
+pygame.display.update()   #显示内容
+
 pressDict={"1":False,"2":False,"3":False}
 
 keyDict={
